@@ -15,9 +15,8 @@ def getMovies():
         if len(month) == 1:
             month = "0" + month
         fulldate += month + "01"
-
+        # 全年电影数据输出到csv文件
         df = pro.bo_monthly(date=fulldate)
-        print(os.path.exists(filename))
         if os.path.exists(filename):
             df.to_csv(filename, mode='a', header=False)
         else:
