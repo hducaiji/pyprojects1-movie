@@ -3,7 +3,7 @@ import tushare as ts
 import os
 import datetime
 
-ts.set_token('9e14c4447f059759bd6be7e03109d6acdcd03e983076b7448013fb49')
+ts.set_token('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 pro = ts.pro_api()
 
 filename = '/Users/fseeeye/Desktop/movies.csv'
