@@ -5,14 +5,31 @@
 2. 人气最高的电影Top
 3. 性价比最好的电影(根据价格，时长和口碑指数)
 4. 统计每个月有多少上映的电影数量，找出淡季和旺季
+
 # 步骤一：获取数据
 源码：getMoives.py
-* 电影的数据通过tushare库获取，老库：https://tushare.pro 新库：http://tushare.org
+* 电影的数据通过tushare库获取，新库：https://tushare.pro 老库：http://tushare.org
 * 然后通过`to_csv(filename)`方法，将获得的数据保存到本地。如果要追加，通过`.to_csv(filename, mode='a', header=False)`。具体可以参考：http://tushare.org/storing.html#csv
+
 # 步骤二：清洗数据
+去除数据中的所有name为“其他”的行
 # 步骤三：分析数据
+1. 票房最高的电影Top10：选出票房列，排序
+3. 人气最高的电影Top10：选出场均人次列，排序
+4. 性价比最好的电影Top10：按照想好的公式计算性价比，排序
+5. 淡季和旺季：去重，统计当月上映的电影
 # 步骤四：可视化数据
+![](images/票房最高的电影Top10.png)
+![](images/人气最高的电影Top10.png)
+![](images/性价比最好的电影Top10.png)
+![](images/淡季和旺季.png)
+
 # 结论
+票房最高的电影：红海行动
+人气最高的电影：红海行动
+性价比最高的电影：无问西东
+淡季：十月
+旺季：九月
 # 附录1: dataframe
 dataframe简单来说就是个数据框，x轴/列名为columns，y轴行标签为index，中间填充数据。根据Columns和Index两个参数定位数据。
 
