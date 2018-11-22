@@ -19,10 +19,10 @@
 4. 性价比最好的电影Top10：按照想好的公式计算性价比，排序
 5. 淡季和旺季：去重，统计当月上映的电影
 # 步骤四：可视化数据
-![](images/票房最高的电影Top10.png)
-![](images/人气最高的电影Top10.png)
-![](images/性价比最好的电影Top10.png)
-![](images/淡季和旺季.png)
+![](images/票房最高的电影Top10.png)<br>
+![](images/人气最高的电影Top10.png)<br>
+![](images/性价比最好的电影Top10.png)<br>
+![](images/淡季和旺季.png)<br>
 
 # 结论
 票房最高的电影：红海行动
